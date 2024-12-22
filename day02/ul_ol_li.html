@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>목록형 태그들</title>
+</head>
+<body>
+    <!--
+    ul, ol 태그의 안에 들어가는 각 요소는
+    li 태그로 작성된다.
+    -->
+    <div id="container">
+        <!--
+        순서가 없는 목록형 태그 ul(un-ordered list)
+        -->
+        <ul class="wrapper">
+            <li class="element">apple</li>
+            <li class="element">banana</li>
+            <li class="element">orange</li>
+        </ul>
+
+        <!--
+        순서가 있는 목록형 태그
+        ol(ordered list)
+        -->
+        <ol>
+            <li>사과</li>
+            <li>바나나</li>
+            <li>망고</li>
+        </ol>
+        <!--
+        정의형 목록 태그(사전형 목록 태그)
+        dl(description list)
+        정의할 단어와 그 내용이 한 쌍으로 이루어져 있다.
+        정의할 단어는 dt 태그에
+        그 내용은 dd 태그에 작성한다.
+        -->
+        <!-- dl>((dt)(dd))*3 -->
+        <dl>
+            <dt>사과</dt>
+            <dd>빨간색 과실</dd>
+            <dt>바나나</dt>
+            <dd>노란색 열대과일</dd>
+            <dt>수박</dt>
+            <dd>초록색 줄무늬의 여름 과일</dd>
+        </dl>
+    </div>
+</body>
+</html>

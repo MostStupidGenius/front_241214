@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>외부 스타일 시트 연습하기</title>
+    <!--
+    외부 스타일 시트 사용방법은 기본적으로
+    내부 스타일 시트와 비슷하다.
+    하지만, 외부의 파일을 가져온다는 점에서 차이를 보인다.
+    외부 파일의 경로를 상대 경로로 지정한 경우,
+    html 혹은 css 파일 중 하나라도 다른 폴더로 이동해버리면
+    정보를 가져오지 못하게 된다.
+    -->
+    <link rel="stylesheet" href="./outer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="square red"></div>
+        <div class="square blue"></div>
+    </div>
+</body>
+</html>

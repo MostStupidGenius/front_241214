@@ -1,0 +1,29 @@
+/* 
+    선택자 부분에서의 구분방법
+    반점(,)은 여러 선택자에 대해 공통으로
+    해당 속성을 지정할 때 사용하며
+    공백( ) 뒤 선택자는 하위 모든 요소에 적용한다는 의미이다.
+    꺾쇠(>)는 바로 아래 자식요소에 적용함을 의미한다.
+*/
+
+.square, .sqr, .sq {
+    width: 100px;
+    height: 100px;
+}
+
+.red, .red-box, .red-block {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+div.container .red {
+    width: 120px;
+}
+
+
+
+
+

@@ -1,0 +1,57 @@
+<!--
+emmet
+    html 문서의 구조를 간단한 단축어만으로
+    쉽게 구축하기 위해서 만들어진 기능으로
+    VSCode에는 기본으로 내장되어 있다.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emmet</title>
+</head>
+<body>
+    <!--
+    emmet 약어 적는 법
+    1. 태그 이름을 먼저 적는다
+    2. 클래스를 추가하고 싶다면, 마침표(.)를 쓰고
+    그 뒤에 클래스 이름을 추가한다.
+    여러 클래스를 주려면 앞선 클래스 이름 뒤에 마침표를 써서
+    남은 클래스 이름을 이어서 쓴다.(.A.B.C)
+    3. id 값을 주고 싶으면 #을 쓰고 id이름을 추가한다.
+    4. 태그 뒤에 >를 쓰면, 바로 아래의 요소를 설정할 수 있다.
+    5. 요소 뒤에 *(곱하기)숫자를 주면
+    해당 요소(태그)를 숫자만큼 반복해서 만들어준다.
+    -->
+
+
+
+    <!--
+    div 태그 안에 div 5개를 생성하고
+    생성된 div 5개의 각각에 2개씩의 span 태그가 들어간다.
+    -->
+    div>div.element*5
+    <div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+        <div class="element"></div>
+    </div>
+
+    <!--
+    div 태그에 container 클래스를 주고
+    그 하위에 text 클래스를 가진 span 태그 5개 생성
+    -->
+    <div class="container"><span class="text"></span><span class="text"></span><span class="text"></span><span class="text"></span><span class="text"></span></div>
+    
+    <!--
+    클래스로 wrapper와 id로 kim-container를 가진 div 태그 아래
+    speaking 클래스를 가진 p 태그 5개 아래에
+    span태그에 text 클래스를 줘보자.
+    -->
+    div.wrapper#kim-container>p.speaking*5>span.text
+
+</body>
+</html>

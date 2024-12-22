@@ -1,0 +1,74 @@
+.text_center {
+    text-align: center;
+}
+
+header {
+    background-color: rgb(255, 120, 41);
+    height: 50px;
+}
+
+nav {
+    background-color: rgb(84, 84, 255);
+}
+
+footer {
+    background-color: rgb(81, 228, 81);
+}
+
+aside, main {
+    display: inline-block;
+    /* height: 300px; */
+}
+
+/* div.container { */
+    /* height: 300px; */
+    /* outline-style: solid;
+    outline-width: 1px; */
+/* } */
+
+aside {
+    outline-style: solid;
+    height: 100px;
+}
+
+.width_100px {
+    /* width: 100px; */
+    display: inline-block;
+}
+
+/* 가상 요소 선택자 */
+/* 
+    특징
+    - content를 이용하여 그 내용을 추가할 수 있다.
+    - 이때 추가되는 내용은 html 상에서는 표시되지 않으며
+    - 단순히 ::before 혹은 ::after로만 표시될 뿐이다.
+    - 없던 요소를 추가하는 것이기 때문에 "가상"이라고 부르는 것이다.
+*/
+.second::after {
+    content: "<li><추가된 내용></li>"; /* 해당 내용은 태그가 아닌 내용으로 인식된다. */
+}
+
+/* :hover 가상 클래스 선택자
+    해당 요소에 마우스를 올리고 있을 동안 해당 스타일 적용
+*/
+.last:hover {
+    background-color: brown;
+}
+
+/* :active 가상 클래스 선택자
+    해당 요소를 클릭하고 있는 동안 스타일 적용
+*/
+.first:hover {
+    background-color: aqua;
+}
+.first:active { 
+    background-color: bisque;
+}
+
+/*
+    해당 요소를 클릭하거나 tab으로 이동하거나 단축키를 사용하여 지정했을 때
+    해당 스타일을 적용한다.
+*/
+.input_text:focus {
+    background-color: blueviolet;
+}

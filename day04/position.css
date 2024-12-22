@@ -1,0 +1,22 @@
+/* div.rel {
+    position: relative;
+} */
+
+div.abs {
+    position: absolute;
+    top: 300px;
+}
+
+body {
+    position: relative;
+}
+
+/* 사용자가 보는 브라우저 화면을 기준으로 요소가 고정 된다. */
+div.fixed {
+    position: fixed;
+}
+
+div.sticky {
+    position: sticky;
+    height: 3000px;
+}

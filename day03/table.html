@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 요소 연습하기</title>
+    <style>
+        table, tr, td, th {
+            border-style: solid;
+            border-color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <!-- 테이블의 제목이나 주제를 적는다. -->
+        <caption>상품 리스트</caption>
+        <tr>
+            <th>번호</th>
+            <th>상품명</th>
+            <th>수량</th>
+            <th colspan="2">가격</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>콜라</td>
+            <td>1</td>
+            <td rowspan="3">1500</td>
+            <td>asds</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>사이다</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

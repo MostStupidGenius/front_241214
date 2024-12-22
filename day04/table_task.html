@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 실습</title>
+    <style>
+        table, th, td {
+            outline-style: solid;
+            /* outline-color: black; */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>이름</th>
+            <th>나이</th>
+            <th>도시</th>
+            <th>구군</th>
+        </tr>
+        <tr>
+            <td>홍길동</td>
+            <!-- rowspan="n" n 기본값 1
+            해당 td 태그를 기준으로 아래로 n만큼의 칸을 확장하라는 의미다
+            확장된 행에 해당하는 행은 해당 칸이 마치 없는 것처럼 건너뛰고 데이터가 들어간다.
+            -->
+            <td rowspan="2">30</td>
+            <td>서울</td>
+            <td>강남구</td>
+        </tr>
+        <tr>
+            <td>고길동</td>
+            <!-- colspan="n" n 기본값1
+            해당 td 태그를 기준으로 우측으로 n만큼의 칸을 확장하라는 의미다.
+            -->
+            <td colspan="2">서울 구로구</td>
+        </tr>
+    </table>
+</body>
+</html>

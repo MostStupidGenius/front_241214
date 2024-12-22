@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글로벌 속성</title>
+</head>
+<body>
+    <!-- global attribute 
+    글로벌 속성은 어떤 요소(태그)든 공통으로 사용할 수 있는 속성으로
+    class, id, style 등의 주요 속성과 -> 자주 쓰는 거
+    title, hidden, tabindex 등 보조 속성으로 나뉜다. -> 자주는 안 쓰는 거
+    -->
+    <div>
+        <div title="첫번째" tabindex="1" accesskey="1">첫번째1</div>
+        <div title="두번째" tabindex="3">두번째2</div>
+        <div hidden tabindex="2">안 보임</div>
+        <!-- hidden이 적용된 경우
+        tabindex는 건너뛴다.
+        -->
+        <!-- accesskey
+        설정한 문자열에 해당하는 키보드의 키를 alt와 함께 누르면
+        해당 태그를 선택하거나 클릭한다.
+        -->
+        <a type="button" href="https://naver.com" accesskey="n">누르면 네이버로</a>
+    </div>
+</body>
+</html>

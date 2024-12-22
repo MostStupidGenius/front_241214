@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내부 스타일 시트 연습하기</title>
+    <!--
+    내부 스타일 시트는 head 안에 style 태그로 작성한다.
+    -->
+    <style>
+        div.container {
+            width: 600px;
+            height: 600px;
+        }
+        .square {
+            width: 100px;
+            height: 100px;
+        }
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        #custom {
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="square red"></div>
+        <div class="square blue"></div>
+        <div class="square" id="custom" style="background-color: black;"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,18 @@
+div.bg_img {
+    /* width: 600px; */
+    height: 184px;
+    background-image: url('source/googlelogo_color_272x92dp.png');
+    background-size: 184px;
+    background-repeat: no-repeat;
+    /* cover는 배경 이미지가 해당 요소의 크기에 맞게 조정된다.
+    단, 원래크기보다 작게 조정되지는 않는다. */
+}
+
+div.bg_color_img {
+    height: 100px;
+    background-image: url('source/googlelogo_color_272x92dp.png');
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-color: rgb(217, 216, 216);
+    background-blend-mode: normal;
+}

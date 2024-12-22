@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form 태그와 입력 태그들</title>
+</head>
+<body>
+    <!-- 폼 태그 만들기 -->
+    <form action="https://naver.com" method="post">
+        <!-- 아이디 입력을 받기 위한 input태그 생성 -->
+        <input type="text" name="id" id="id_input" placeholder="ID를 입력하세요">
+        
+        <!-- 패스워드를 입력받기 위한 input태그 생성 -->
+        <input type="password" name="password" id="password_input" placeholder="PW입력하세요">
+
+        <!-- 전화번호 형식 입력받기 요소
+        잘 안 쓰인다.
+        -->
+        <input type="tel" name="telephone" id="tele">
+        <!-- 숫자만 입력할 수 있는 요소
+        number 태그의 특징
+        input박스 우측에 위아래 방향키가 생기며,
+        오르는 표시를 누르면 input 박스의 값이 증가하며
+        내려가는 표시를 누르면 반대로 작동한다.
+        -->
+        <input type="number" name="number" id="mum_id">
+
+        <input type="url" name="empty_link" id="">
+
+        <input type="file" name="file_input" id="">
+
+        <input type="button" value="banana">
+
+        <label for="target" style="width: 300px; display:inline-block">
+            <input type="text" name="dummy" id="target">
+        </label>
+
+        <!-- fieldset, legend
+        fieldset은 여러 입력요소나 내용을 박스와 같은
+        표현으로 묶어두기 위해 사용하는 태그다.
+        legend 태그는 fieldset이 묶은 박스 상단에
+        박스에 대한 설명이나 제목을 입력하는 용도로 쓰인다.
+        -->
+        <fieldset>
+            <legend>레전드 부분</legend>
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+            <input type="text" name="" id="">
+        </fieldset>
+
+        <!-- textarea
+        여러 줄의 텍스트를 입력받을 때 사용하며
+        일반적으로 게시글 내용, 댓글 내용 등을 작성할 때
+        사용된다.
+        특징
+            - 태그 내에 입력한 콘텐츠의 띄어쓰기나 줄바꿈 등이
+            있는 그대로 표현된다.
+        -->
+        <textarea name="textarea" id="" placeholder="내용을 입력하세요" disabled></textarea>
+
+        <!-- select, option, optgroup
+        드롭박스를 구현하기 위한 태그로
+        select 태그 안에 option 태그와 optgroup 태그로 이루어지며
+        option 태그는 선택지 역할을 하고
+        optgroup은 선택지의 종류를 나누는 구분자 역할을 한다.
+        -->
+        <select name="select_dummy" id="">
+            <!-- value는 전송할 때 전송될 값 자체를 의미하며 -->
+            <option value="apple">사과</option>
+            <!-- 태그 내 콘텐츠 값은 드롭박스에서 선택할 내용을
+            나타내는 용도로 쓰인다.
+            -->
+            <option value="banana">바나나</option>
+        </select>
+
+        <!-- 옵션 그룹 연습해보기 -->
+        <!-- optgroup의 label 태그에 입력한 내용은
+        해당 선택지 그룹의 상단에 굵은 글씨로 표시되어
+        아래의 선택지를 대표하는 단어라는 것을 보여준다.
+        해당 그룹에 속하는 선택지를 optgroup 안에 배치하여
+        그룹의 요소로 취급할 수 있다.(들여쓰기가 된다.)
+        -->
+        <select name="" id="">
+            <optgroup label="과일">
+                <option value="apple">사과</option>
+                <option value="banana">바나나</option>
+            </optgroup>
+            <optgroup label="야채">
+                <option value="vegitable">배추</option>
+                <option value="vegitable2">상추</option>
+                <option value="vegitable3">쑥</option>
+            </optgroup>
+        </select>
+
+        <!-- 버튼 태그
+        submit 타입은 해당 버튼 요소를 실행(클릭)했을 때
+        전체 form 태그의 input 요소들의 정보를 담아
+        action에서 작성한 주소로
+        method에서 작성한 방식으로 데이터를 전송한다.
+        -->
+        <button type="submit">전송</button>
+
+        <input type="text" name="" id="" readonly>
+        
+
+
+
+
+
+    </form>
+</body>
+</html>

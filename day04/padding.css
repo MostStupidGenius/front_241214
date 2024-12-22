@@ -1,0 +1,23 @@
+div.pad30 {
+    padding: 30px;
+}
+
+div.pad10 {
+    padding: 10px;
+}
+
+div.border3 {
+    border: 3px solid black;
+    margin: 30px 0px 10px 50px;
+}
+/* margin 
+    전달되는 값이 하나면 위아래 왼쪽 오른쪽 가릴 것 없이
+    네 방향 모두 적용된다.
+    전달되는 값이 두 개면 상하에 대해서 첫번째 스타일 적용
+    두번째 값에 대해서는 좌우에 적용
+    전달되는 값이 세 개 이상이면 위, 좌우, 아래 순으로 적용된다.
+    전달되는 값이 네 개면 위부터 시계방향으로 각 값이 적용된다.
+*/
+div.margin30 {
+    margin: 30px;
+}
