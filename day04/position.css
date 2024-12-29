@@ -1,15 +1,21 @@
-/* div.rel {
+div.rel {
     position: relative;
-} */
+}
+.rel>p{
+    position: relative;
+    left: 40px;
+    top:40px;
+}
 
 div.abs {
     position: absolute;
-    top: 300px;
+    top: 400px;
+    left: 30px;
 }
 
-body {
+/* body {
     position: relative;
-}
+} */
 
 /* 사용자가 보는 브라우저 화면을 기준으로 요소가 고정 된다. */
 div.fixed {

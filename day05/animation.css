@@ -1,0 +1,48 @@
+@keyframes example {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100px);
+    }
+}
+
+.blue {
+    background-color: blue;
+}
+.red {
+    background-color: red;
+}
+.black {
+    background-color: black;
+}
+
+.a {
+    /* 적용할 애니메이션 이름 지정 */
+    animation-name: example;
+    animation-duration: 3s;
+    /* time-function, delay 등은 전환 효과와 비슷 */
+    /* 애니메이션 반복 횟수 설정 */
+    /* infinite로 설정하면 무한 반복한다. */
+    animation-iteration-count: infinite;
+    
+    /* 애니메이션 재생 방향 설정
+        normal, reverse, alternate, alternate-reverse
+        reverse는 방향 반전
+        alternate는 왕복 진행
+    */
+    animation-direction: alternate;
+    /* 애니메이션이 끝난 후, 또는 시작 전 상태를 설정한다.
+        none, forwards, backwards, both
+        none은 원상태로 돌아간다.
+        forwards는 끝난 상태로 남아있다.
+        backwards는 시작 전 상태로 돌아간다.
+    */
+    animation-fill-mode: forwards;
+}
+
+.a:hover {
+    /* animation-direction: reverse; */
+    /* 애니메이션의 재생 상태를 전환 */
+    animation-play-state: paused;
+}

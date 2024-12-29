@@ -1,0 +1,16 @@
+.is_flex {
+    display: flex !important;
+    /* flex-direction
+        요소를 정렬하는 방향을 설정한다.
+        기본값은 row로, 좌->우
+        column 위->아래
+        row-reverse 우->좌
+        column-reverse 아래->위
+    */
+    flex-direction: row;
+    /* justify-content
+        주축 방향 정렬
+
+    */
+    justify-content: flex-end;
+}

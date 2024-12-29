@@ -1,0 +1,60 @@
+.grid-container {
+    display: grid;
+}
+
+.grid-container:focus {
+    display: grid;
+    /* grid-template-clumns: x1, x2, x3
+        x1은 첫번째 열의 가로 길이를 설정
+        x2는 두번째 열의 가로 길이 설정,...
+        
+        x1~ 개수는 열의 개수를 의미한다.
+    */
+    grid-template-columns: 60px 60px;
+    /* grid-template-rows: y1, y2, y3,...
+        y1은 첫행의 높이 설정,
+        y2는 두번째 행의 높이 설정,...
+        y1~의 개수는 행의 개수를 의미한다.
+    */
+    grid-template-rows: 60px 60px;
+
+    /* 모든 셀 사이의 간격을 조정 */
+    /* gap: 20px; */
+
+    /* grid-item
+        열 혹은 행의 시작/끝 위치를 지정한다.
+    grid-column: x / y
+    x 열의 시작/y 열의 끝 위치를 지정
+    */
+    /* grid-column: 1 / 2; */
+}
+
+/* .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px auto;
+} */
+
+.grid-container {
+    grid-template-columns: 120px 120px;
+    grid-template-rows: 120px 120px;
+}
+
+/* .grid-container {
+    grid-template-areas: 
+    "header header"
+    "div div"
+    ;
+} */
+/* 
+.header {grid-area: header;}
+.div {grid-area: div;} */
+
+/* 반응형 grid
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    컨테이너 크기에 따라 자동으로 열 개수를 조정한다.
+    gap: 20px;
+*/
+.grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}

@@ -1,0 +1,59 @@
+#a.translate {
+    /* transform:
+    translateX(n)
+        n만큼 요소를 수평으로 이동시킨다.
+    */
+    transform: translateX(30px);
+    /* translateY(n) 수직으로 이동*/
+    transform: translateY(30px);
+    /* transform: translate(X, Y)
+        수평으로 X만큼 이동, 수직으로 Y만큼 이동
+    */
+    transform: translate(30px, 30px);
+
+}
+#a {
+    margin-left: 100px;
+    margin-top: 100px;
+}
+
+.rotate {
+    /* rotate(deg)
+        deg의 값만큼 요소가 시계방향으로 회전한다.
+    */
+    transform: rotate(90deg);
+    transition-duration: 0.2s;
+}
+
+.scale {
+    /* 요소의 크기를 확대하거나 축소
+        scaleX(n): 요소의 너비를 n배로 조정한다.
+        scaleY(n): 요소의 높이를 n배로 조정한다.
+        scale(X, Y): 요소의 크기를 X, Y축을 기준으로 조정한다.
+    */
+    /* transform: scaleX(3); */
+    /* transform: scaleY(3); */
+    transform: scale(2, 0.1);
+    transition-duration: 2s;
+}
+
+.skew {
+    /* 축을 기준으로 기울인다.
+        skewX(deg)
+    */
+    /* transform: skewX(45deg); */
+    /* transform: skewY(45deg); */
+    transform: skew(60deg, 60deg);
+    transition-duration: 2s;
+}
+
+/* matrix
+transform 종합 설정.
+scaleX tan(skewY) tan(skewX) scaleY translateX translateY
+transform: matrix(a, b, c, d, e, f)
+*/
+.matrix {
+    transform: matrix(2, 0, 0, 3, 30px, 30px); /*적용 안 됨*/
+    transform: matrix(2, 0.7, -0.5, 1, 50, 100);
+    transition-duration: 2s;
+}
